@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Webpage</title>
+    <!-- Link to an external CSS stylesheet (Optional) -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Embedded CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 40px;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Demo Page</h1>
+        <p>This is a starter <strong>index.html</strong> layout featuring core structural elements, simple CSS formatting, and a fundamental JavaScript interaction.</p>
+        
+        <!-- Interactive element -->
+        <button id="demoBtn">Click Me!</button>
+        <p id="message" style="margin-top: 15px; font-weight: bold; color: #28a745;"></p>
+    </div>
+
+    <!-- Link to an external JS file (Optional) -->
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+        // Inline JavaScript functionality
+        document.getElementById('demoBtn').addEventListener('click', function() {
+            document.getElementById('message').innerText = 'Hello World! The script is working perfectly.';
+        });
+    </script>
+</body>
+</html>
